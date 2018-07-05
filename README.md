@@ -4,18 +4,18 @@ Detect user's most preferred language within the given language list.
 
 ## Why?
 
- - To determine an initial display language on your application with fallback options.
+ - To determine an `initial display language` or `default language router` on your application with fallback options.
 
 ## Inspiration
 
  - I made `en` and `ko` router to support i18n. How do I detect user's preferred language on browser?
- - My app only support `en` and `ko`. How do I handle if `de` users visit us?
- - I added `fr` router. How do I make it possible to detect `fr_FR` and `fr_CA` users as well?
+ - My app only support `en` and `ko` for now. What language should I display when `zh` users visit us?
+ - I added `fr` router. But, how do I handle `fr_FR` and `fr_CA` users as well?
 
 ## Installation
 
 ```bash
-npm install browser-lang
+npm install browser-lang --save
 ```
 or
 ```bash
