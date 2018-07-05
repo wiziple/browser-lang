@@ -1,0 +1,65 @@
+# browser-lang
+
+Detect user's most preferred language within the given language list.
+
+## Why?
+
+ - To determine an initial display language on your application with fallback options.
+
+## Inspiration
+
+ - I made `en` and `ko` router to support i18n. How do I detect user's preferred language on browser?
+ - My app only support `en` and `ko`. How do I handle if `de` users visit us?
+ - I added `fr` router. How do I make it possible to detect `fr_FR` and `fr_CA` users as well?
+
+## Installation
+
+```bash
+npm install browser-lang
+```
+or
+```bash
+yarn add browser-lang
+```
+
+## Options
+
+* **languages:**
+language code list that is available on your application.
+
+* **fallback:**
+default language when user's preferred language is not on the list.
+
+## Example
+
+in javascript project
+
+```js
+// const browserLang = require('browser-lang');
+import browserLang from 'browser-lang';
+
+const myLanguage = browserLang();
+// return the preferred language on browser: e.g. "ko-KR" or "ko".
+
+const myLanguage = browserLang({
+  languages: ['ko', 'de', 'zh', 'zh_TW', 'en'], 
+  fallback: 'en',
+});
+
+// return "ko" if the preferred language on browser is set to "ko-KR" or "ko".
+// return "en" as a fallback if the preferred language on browser is "fr".
+// return 'zh' if the preferred language on browser is set to "zh_HK".
+```
+
+## Browser support
+
+- Chrome
+- Firefox
+- Safari
+- IE
+- Edge
+- Opera
+
+## License
+
+MIT &copy; [Daewoong Moon](https://github.com/wiziple)

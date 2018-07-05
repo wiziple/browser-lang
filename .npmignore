@@ -1,0 +1,6 @@
+src
+test
+coverage
+.babelrc
+.eslintrc
+.gitignore

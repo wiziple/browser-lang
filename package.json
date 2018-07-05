@@ -1,0 +1,35 @@
+{
+  "name": "browser-lang",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "",
+  "repository": "github:wiziple/browser-lang",
+  "bugs": "https://github.com/wiziple/browser-lang/issues",
+  "homepage": "https://github.com/wiziple/browser-lang",
+  "keywords": [
+    "browser language",
+    "language detect",
+    "accepted language",
+    "default language",
+    "i18n"
+  ],
+  "author": "Daewoong Moon <wiziple@gmail.com>",
+  "main": "./dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "lint": "eslint src test",
+    "test": "jest test --watch",
+    "build": "babel src --out-dir dist"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-es2015": "6.24.1",
+    "eslint": "^5.0.1",
+    "eslint-config-airbnb-base": "13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "jest": "^23.3.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.10"
+  }
+}
