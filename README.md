@@ -8,7 +8,7 @@ Detect user's most preferred language within the given language list.
 
 ## Inspiration
 
- - I made `en` and `ko` router to support i18n. How do I detect user's preferred language on browser?
+ - I made `en` and `ko` router to support i18n. How do I detect user's preferred language in browser?
  - My app only support `en` and `ko` for now. What language should I display when `zh` users visit us?
  - I added `fr` router. But, how do I handle `fr_FR` and `fr_CA` users as well?
 
@@ -39,16 +39,16 @@ in javascript project
 import browserLang from 'browser-lang';
 
 const myLanguage = browserLang();
-// return the preferred language on browser: e.g. "ko-KR" or "ko".
+// return the preferred language in browser: e.g. "ko-KR" or "ko".
 
 const myLanguage = browserLang({
   languages: ['ko', 'de', 'zh', 'zh_TW', 'en'], 
   fallback: 'en',
 });
 
-// return "ko" if the preferred language on browser is set to "ko-KR" or "ko".
-// return "en" as a fallback if the preferred language on browser is "fr".
-// return 'zh' if the preferred language on browser is set to "zh_HK".
+// return "ko" if the preferred language in browser is set to "ko-KR" or "ko".
+// return "en" as a fallback if the preferred language in browser is "fr".
+// return 'zh' if the preferred language in browser is set to "zh_HK".
 ```
 
 ## Browser support
