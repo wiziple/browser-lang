@@ -9,7 +9,7 @@ Detect user's most preferred language within the given language list.
 ## Inspiration
 
  - I made `en` and `ko` router to support i18n. How do I detect user's preferred language in browser?
- - My app only support `en` and `ko` for now. What language should I display when `zh` users visit us?
+ - My app only supports `en` and `ko` for now. What language should I display when `zh` users visit us?
  - I added `fr` router. But, how do I handle `fr_FR` and `fr_CA` users as well?
 
 ## Installation
