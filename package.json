@@ -1,6 +1,6 @@
 {
   "name": "browser-lang",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "description": "",
   "repository": "github:wiziple/browser-lang",
@@ -17,7 +17,8 @@
   "main": "./dist/index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "test": "jest test --watch",
+    "test": "jest test",
+    "test:watch": "jest test --watch",
     "build": "babel src --out-dir dist",
     "format": "prettier --write {src,test}/**/*.{js,jsx}"
   },
