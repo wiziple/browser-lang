@@ -81,4 +81,24 @@ describe("browserLang", () => {
     }
     expect(browserLang(options)).toBe("zh")
   })
+
+  it('should return "de-de" when navigator.languages is ["de"] and "de-de" is one item in the list.', () => {
+    mockNavigator({
+      languages: ["de"],
+    })
+    const options = {
+      languages: ["en-us", "de-de"],
+    }
+    expect(browserLang(options)).toBe("de-de")
+  })
+
+  it('should return "de-de" when navigator.languages is ["de"] and "de-de" is first item in the list.', () => {
+    mockNavigator({
+      languages: ["de"],
+    })
+    const options = {
+      languages: ["en-us", "de-de", "de-as"],
+    }
+    expect(browserLang(options)).toBe("de-de")
+  })
 })
